@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/border_item"
+    android:layout_height="200dp"
+    android:layout_width="380dp"
+    android:padding="3dp"
+    android:layout_margin="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIvSuperHero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="2dp"
+        android:backgroundTint="@color/transparente"
+        android:outlineAmbientShadowColor="@color/transparente"
+        android:outlineSpotShadowColor="@color/transparente">
+        <ImageView
+            android:id="@+id/ivSuperHero"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/border_button"
+
+            android:scaleType="centerCrop"
+            tools:background="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignBottom="@id/cardIvSuperHero"
+        android:backgroundTint="@color/transparente"
+        android:outlineAmbientShadowColor="@color/transparente"
+        android:outlineSpotShadowColor="@color/transparente">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:background="@drawable/fondo_libros"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvSuperHeroName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris"
+                android:layout_gravity="center"
+                tools:text="kotlinman"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/tvPublisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                tools:text="aris" />
+
+            <TextView
+                android:id="@+id/tvRealName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris"
+                android:layout_gravity="end"
+                android:textSize="14dp"
+                android:layout_marginRight="10dp"
+                tools:text="aris" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

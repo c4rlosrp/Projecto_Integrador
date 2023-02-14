@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.projectointegrador.R
 import com.example.projectointegrador.SuperHero
 
- class SuperHeroAdapter(private val superheroList:List<SuperHero>) : RecyclerView.Adapter<SuperHeroViewHolder>(){
+ class SuperHeroAdapter(private var superheroList:List<SuperHero>) : RecyclerView.Adapter<SuperHeroViewHolder>(){
 
      override fun onBindViewHolder(holder: SuperHeroViewHolder, position: Int) {
          val item = superheroList[position]
@@ -21,6 +21,11 @@ import com.example.projectointegrador.SuperHero
 
      }
      override fun getItemCount(): Int = superheroList.size
+
+     fun setFilteredList(superheroList: List<SuperHero>){
+         this.superheroList = superheroList
+         notifyDataSetChanged()
+     }
 
  }
 

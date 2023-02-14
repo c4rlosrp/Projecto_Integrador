@@ -6,7 +6,7 @@
     tools:context=".BookFragment"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#4C0000">
+    android:background="@drawable/fondo_app">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerSuperHero"

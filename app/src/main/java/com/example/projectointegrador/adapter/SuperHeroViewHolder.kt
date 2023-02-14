@@ -12,7 +12,6 @@ import com.squareup.picasso.Picasso
 
 class SuperHeroViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
 
-    private lateinit var imagen:ImageView
     val superHero = view.findViewById<TextView>(R.id.tvSuperHeroName)
     val realName = view.findViewById<TextView>(R.id.tvRealName)
     val publisher = view.findViewById<TextView>(R.id.tvPublisher)

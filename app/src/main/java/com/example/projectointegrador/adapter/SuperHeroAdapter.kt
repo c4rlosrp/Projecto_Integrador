@@ -11,8 +11,6 @@ import com.example.projectointegrador.SuperHero
      override fun onBindViewHolder(holder: SuperHeroViewHolder, position: Int) {
          val item = superheroList[position]
          holder.render(item)
-
-
      }
 
      override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuperHeroViewHolder {
@@ -21,11 +19,6 @@ import com.example.projectointegrador.SuperHero
 
      }
      override fun getItemCount(): Int = superheroList.size
-
-     fun setFilteredList(superheroList: List<SuperHero>){
-         this.superheroList = superheroList
-         notifyDataSetChanged()
-     }
 
  }
 

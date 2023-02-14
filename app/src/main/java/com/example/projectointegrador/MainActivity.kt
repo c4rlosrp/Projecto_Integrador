@@ -1,22 +1,9 @@
 package com.example.projectointegrador
 
-import android.Manifest
-import android.content.pm.PackageManager
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
-import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.projectointegrador.adapter.SuperHeroAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import java.io.File
 
 class MainActivity : AppCompatActivity() {
 

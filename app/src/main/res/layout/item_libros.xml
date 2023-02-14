@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_margin="15dp"
-    android:background="#293379"
-    android:layout_height="200dp"
-    android:layout_width="380dp"
-    android:gravity="center">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="230dp"
+    android:layout_width="170dp"
+    android:layout_margin="15dp">
 
-    <TextView
-        android:id="@+id/mytexto"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIvSuperHero"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
-        android:gravity="center"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        app:cardCornerRadius="2dp"
+        android:backgroundTint="@color/transparente"
+        android:outlineAmbientShadowColor="@color/transparente"
+        android:outlineSpotShadowColor="@color/transparente">
+        <ImageView
+            android:id="@+id/ivBooks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/border_button"
+
+            android:scaleType="centerCrop"
+            tools:background="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignBottom="@id/cardIvSuperHero"
+        android:backgroundTint="@color/transparente"
+        android:outlineAmbientShadowColor="@color/transparente"
+        android:outlineSpotShadowColor="@color/transparente">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:background="@drawable/fondo_libros"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvBookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris"
+                android:layout_gravity="center"
+                tools:text="kotlinman"
+                android:textStyle="bold"
+                android:textSize="20dp"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/tvAuthorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                tools:text="aris" />
+
+            <TextView
+                android:id="@+id/tvNumVolumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris"
+                android:layout_gravity="end"
+                android:textSize="14dp"
+                android:layout_marginRight="10dp"
+                tools:text="aris" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
